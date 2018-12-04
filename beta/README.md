@@ -1,1 +1,1 @@
-Beta build count: 1
+Beta build count: 2
