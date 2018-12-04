@@ -1,0 +1,12 @@
+shared:
+  image: node:8
+  requires: [~pr, ~commit]
+jobs:
+  build-alpha:
+    sourcePaths: ["alpha/", "screwdriver.yaml"]
+    steps:
+      - build:  echo "Building alpha"
+  build-beta:
+    sourcePaths: ["beta/", "screwdriver.yaml"]
+    steps:
+      - build:  echo "Building beta"
