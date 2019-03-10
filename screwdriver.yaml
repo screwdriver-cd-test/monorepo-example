@@ -6,6 +6,10 @@ jobs:
     sourcePaths: ["alpha/", "screwdriver.yaml"]
     steps:
       - build:  echo "Building alpha"
+  deploy-alpha:
+    requires: build-alpha
+    steps:
+      - deploy: echo delpoy
   build-beta:
     sourcePaths: ["beta/", "screwdriver.yaml"]
     steps:
